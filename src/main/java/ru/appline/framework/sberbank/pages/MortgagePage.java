@@ -51,7 +51,7 @@ public class MortgagePage extends BasePage {
         return this;
     }
 
-    @Step("Проверка заполнения поля \"{whatFieldToCheck}\" значением \"{value}\"")
+    @Step("Проверка значений поля \"{whatFieldToCheck}\"")
     public MortgagePage checkCalculationResults(String whatFieldToCheck, double value) {
         switchFrameCheck();
         WebElement field = getDriver().findElement(By.xpath("//span[text()='" + whatFieldToCheck +
