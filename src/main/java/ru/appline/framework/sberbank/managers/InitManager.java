@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import java.util.concurrent.TimeUnit;
 
 import static ru.appline.framework.sberbank.utils.PropertyConstants.*;
+import static ru.appline.framework.sberbank.managers.DriverManager.quitDriver;
 
 public class InitManager {
 
@@ -20,6 +21,6 @@ public class InitManager {
     }
 
     public static void quitFramework() {
-        driver.quit();
+        quitDriver();
     }
 }
